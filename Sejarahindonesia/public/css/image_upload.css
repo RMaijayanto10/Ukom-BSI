@@ -1,0 +1,134 @@
+fieldset{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #92CC47;
+    border: 1px solid #ccc;
+    padding: 20px 0;
+    margin: auto;
+    width: 40%;
+    position: relative;
+    top: 100px;
+    box-shadow: 2px 2px 3px #527328;
+}
+
+fieldset label{
+    display: block;
+    float: left;
+    width: 50%;
+    height: 25px;
+    line-height: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+    margin: -5px 0 5px 0;
+    color: #092E20;
+}
+
+.rataKanan{
+    text-align: right;
+    position: relative;
+    right: 50px;
+    top: 20px;
+    margin: 0 0 20px 0;
+}
+
+.rataKanan input[type='submit']{
+    background: #DB6100;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    padding: 5px;
+    color: white;
+}
+
+.rataKanan input[type='submit']:hover{
+    background: #F17716;
+}
+
+/* menyamakan tampilan elemen input pada semua browser
+   dimodifikasi dari http://www.dte.web.id/2013/01/menyamakan-tampilan-elemen.html */
+ 
+fieldset .tampilanInput{
+    position:relative;
+    display:inline-block;
+    width:210px;
+    height:20px;
+    border:1px solid #aaa;
+    background-color:white;
+    overflow:hidden;
+}
+
+fieldset .tampilanInput input{
+    opacity:0;
+    filter:alpha(opacity=0);
+    position:relative;
+    z-index:4;
+}
+
+fieldset input[type=submit].hps_btn{
+    /* button bergambar tong sampah menggunakan metode css sprite 
+     * http://www.klikedukasi.com/2012/10/berkenalan-dengan-css-sprite.html */
+    background: url('ikon_hapus.png') no-repeat transparent;
+    height: 16px;
+    width: 16px;
+    border: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    padding: 0 10px;
+    color: #003E49;
+    cursor: pointer;
+    position: relative;
+    right: 20px;
+    float: right;
+}
+
+fieldset input[type=submit].hps_btn:hover{
+    background-position: 0 -16px;
+}
+
+fieldset .tampilanInput span{
+    display:block;
+    position:absolute;
+    top:2px;
+    right:2px;
+    bottom:0;
+    background:url('plus.png') no-repeat scroll 0 0 #ffffff;
+    font:normal bold 12px/20px Arial,Sans-Serif;
+    color:white;
+    padding:0 10px;
+}
+
+fieldset .tampilanInput .show-path{
+    background:none;
+    font-weight:normal;
+    left:0;
+    padding:0 5px;
+}
+
+fieldset .fileTerpilih{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    color: #FFF;
+    clear: both;
+}
+
+ul#listGambar{
+    list-style: none;
+    cursor: pointer;
+    padding: 10px 0 0 0;
+}
+
+ul#listGambar li{
+    display: block;
+    padding: 5px 0 0 20px;
+    text-decoration: none;
+    color: #092E20;
+}
+
+ul#listGambar li:hover, ul#imgList li:hover{
+    text-decoration: underline;
+    background-position: 97% center;
+}
